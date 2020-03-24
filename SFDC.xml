@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://maclog-dev-ed.my.salesforce.com" validUntil="2030-03-22T01:40:11.048Z" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+   <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:KeyDescriptor use="signing">
+         <ds:KeyInfo>
+            <ds:X509Data>
+               <ds:X509Certificate>MIIErDCCA5SgAwIBAgIOAXD/4uKgAAAAAAkFdWswDQYJKoZIhvcNAQELBQAwgZAxKDAmBgNVBAMMH1NlbGZTaWduZWRDZXJ0XzIyTWFyMjAyMF8wMTM3MDQxGDAWBgNVBAsMDzAwRDJ3MDAwMDA0TU9GVjEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0EwHhcNMjAwMzIyMDEzNzA0WhcNMjEwMzIyMDAwMDAwWjCBkDEoMCYGA1UEAwwfU2VsZlNpZ25lZENlcnRfMjJNYXIyMDIwXzAxMzcwNDEYMBYGA1UECwwPMDBEMncwMDAwMDRNT0ZWMRcwFQYDVQQKDA5TYWxlc2ZvcmNlLmNvbTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzELMAkGA1UECAwCQ0ExDDAKBgNVBAYTA1VTQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJzxgwzdRp2U3vZ9tv7d05SlQWMNgYXSBRLUCVnAMIqMmsf2UpmYWCOPJBnb3UYUdhPa0PQqNijlRF6wzSR+1reqIGPNIOVZpHYmk7B+unm8gnkwfiaVGDBICaoGbk6plYAV2CIonWs6Ddlpke56tUm3holOsGGUGXzcz8vlRaQlPbmzqNCnupxZB0LQTDFGDEADyvuGb2dNaL3Dw14hsdJV+Al7Npe6VF/olHVMmhPiUcJafaM3avGc+Dmmd+6lueDA2Kdbq28cTTLfxMmDY8QpQoTo7AcDSidgSaLdj/tqlo5RJ85GoOEOXZIUX6hjQaroxknKc3QS32Jln3qoUicCAwEAAaOCAQAwgf0wHQYDVR0OBBYEFEP3p+fWekGlb1UNi9kYF81QyZqdMA8GA1UdEwEB/wQFMAMBAf8wgcoGA1UdIwSBwjCBv4AUQ/en59Z6QaVvVQ2L2RgXzVDJmp2hgZakgZMwgZAxKDAmBgNVBAMMH1NlbGZTaWduZWRDZXJ0XzIyTWFyMjAyMF8wMTM3MDQxGDAWBgNVBAsMDzAwRDJ3MDAwMDA0TU9GVjEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0GCDgFw/+LioAAAAAAJBXVrMA0GCSqGSIb3DQEBCwUAA4IBAQBc2+FJrJBOV6SwGJ8HLwCd7kGIm1V0WyjibO5fNyAxI0v8tC/FPtbyqA5MTC4yyhKKGNvS8eJjCzj027JXfD3s/lP/2M4ezTOXsM3xR3PeDYMuzJlFcYjS+vt5P5qSYRfsdYc5YGkr5DEwWU0+st7C4ua8hqfvEr6+ggUbHDWmxGvya0uUAfYBu8bSecNCt9PyGZRO3o68Hj7jdeuktl3j+vWfIq4doBD2eBrhkurDM0k+PdvOrB2/fQmqwZR7CPexjH1mxpSu0ql9Nq5iytMTACxYw6Tc51Lh1FC5yWJfKMDYrwRG+Krk1SVSXB/yv9UlyvzD04rv6Cby2Fcpe0oQ</ds:X509Certificate>
+            </ds:X509Data>
+         </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://maclog-dev-ed.my.salesforce.com/services/auth/idp/saml2/logout"/>
+      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://maclog-dev-ed.my.salesforce.com/services/auth/idp/saml2/logout"/>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://maclog-dev-ed.my.salesforce.com/idp/endpoint/HttpPost"/>
+      <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://maclog-dev-ed.my.salesforce.com/idp/endpoint/HttpRedirect"/>
+   </md:IDPSSODescriptor>
+</md:EntityDescriptor>
